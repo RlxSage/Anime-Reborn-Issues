@@ -1,0 +1,31 @@
+name: Feature Request
+description: Suggest a new feature or improvement for the game.
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to improve the game? Let us know by filling out this form!
+  - type: input
+    id: feature_summary
+    attributes:
+      label: Feature Summary
+      description: Provide a short summary of the feature you'd like to see.
+      placeholder: "Add a new boss battle system."
+    validations:
+      required: true
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Feature Description
+      description: Describe the feature in detail. How would it work? Why is it important?
+      placeholder: "A boss battle system where players can team up to defeat powerful enemies."
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Provide any additional information or context for your suggestion.
+      placeholder: "Example: This idea is inspired by another popular anime game."

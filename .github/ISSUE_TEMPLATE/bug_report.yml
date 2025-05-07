@@ -1,0 +1,50 @@
+name: Bug Report
+description: Report a bug or issue with the game.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill out the details below.
+  - type: input
+    id: summary
+    attributes:
+      label: Brief Summary
+      description: Provide a short summary of the bug.
+      placeholder: "Game crashes when I open inventory."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the issue.
+      placeholder: |
+        1. Open the game.
+        2. Go to the inventory menu.
+        3. Observe the crash.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+      placeholder: "The inventory should open without crashing."
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happened.
+      placeholder: "The game crashed and returned to the main menu."
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Context
+      description: Provide any additional information or evidence (e.g., screenshots, videos).
+      placeholder: "Screenshot of the error message."
